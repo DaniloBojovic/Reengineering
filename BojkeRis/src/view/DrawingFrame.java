@@ -30,6 +30,7 @@ import java.awt.Color;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 import java.io.FileNotFoundException;
+import java.net.URL;
 import java.util.ArrayList;
 
 import model.Point;
@@ -248,7 +249,8 @@ public class DrawingFrame extends JFrame {
 		gbc_tglbtnPoint.insets = new Insets(0, 0, 5, 0);
 		gbc_tglbtnPoint.gridx = 0;
 		gbc_tglbtnPoint.gridy = 1;
-		tglbtnPoint.setIcon(new ImageIcon("C:\\Users\\igor\\Downloads\\go4code-master-6818eda9944da56fc0fc5744f5e409be6bf87ac4\\01\\start\\DaniloRis\\bin\\shapeImages\\Point.png"));
+		URL url = ClassLoader.getSystemClassLoader().getResource("shapeImages/Point.png");
+		tglbtnPoint.setIcon(new ImageIcon(url));
 		tglbtnPoint.setBackground(Color.WHITE);
 		
 		pnlWest.add(tglbtnPoint, gbc_tglbtnPoint);
@@ -260,7 +262,8 @@ public class DrawingFrame extends JFrame {
 		gbc_tglbtnLine.insets = new Insets(0, 0, 5, 0);
 		gbc_tglbtnLine.gridx = 0;
 		gbc_tglbtnLine.gridy = 2;
-		tglbtnLine.setIcon(new ImageIcon("C:\\Users\\igor\\Downloads\\go4code-master-6818eda9944da56fc0fc5744f5e409be6bf87ac4\\01\\start\\DaniloRis\\bin\\shapeImages\\Line.png"));
+		URL url1 = ClassLoader.getSystemClassLoader().getResource("shapeImages/Line.png");
+		tglbtnLine.setIcon(new ImageIcon(url1));
 		tglbtnLine.setBackground(Color.WHITE);
 		pnlWest.add(tglbtnLine, gbc_tglbtnLine);
 
@@ -271,7 +274,8 @@ public class DrawingFrame extends JFrame {
 		gbc_tglbtnSquare.insets = new Insets(0, 0, 5, 0);
 		gbc_tglbtnSquare.gridx = 0;
 		gbc_tglbtnSquare.gridy = 3;
-		tglbtnSquare.setIcon(new ImageIcon("C:\\Users\\igor\\Downloads\\go4code-master-6818eda9944da56fc0fc5744f5e409be6bf87ac4\\01\\start\\DaniloRis\\bin\\shapeImages\\Square.png"));
+		URL url2 = ClassLoader.getSystemClassLoader().getResource("shapeImages/Square.png");
+		tglbtnSquare.setIcon(new ImageIcon(url2));
 		tglbtnSquare.setBackground(Color.WHITE);
 		pnlWest.add(tglbtnSquare, gbc_tglbtnSquare);
 
@@ -282,7 +286,8 @@ public class DrawingFrame extends JFrame {
 		gbc_tglbtnRectangle.insets = new Insets(0, 0, 5, 0);
 		gbc_tglbtnRectangle.gridx = 0;
 		gbc_tglbtnRectangle.gridy = 4;
-		tglbtnRectangle.setIcon(new ImageIcon("C:\\Users\\igor\\Downloads\\go4code-master-6818eda9944da56fc0fc5744f5e409be6bf87ac4\\01\\start\\DaniloRis\\bin\\shapeImages\\Rect.png"));
+		URL url3 = ClassLoader.getSystemClassLoader().getResource("shapeImages/Rect.png");
+		tglbtnRectangle.setIcon(new ImageIcon(url3));
 		tglbtnRectangle.setBackground(Color.WHITE);
 		pnlWest.add(tglbtnRectangle, gbc_tglbtnRectangle);
 
@@ -293,7 +298,8 @@ public class DrawingFrame extends JFrame {
 		gbc_tglbtnCircle.insets = new Insets(0, 0, 5, 0);
 		gbc_tglbtnCircle.gridx = 0;
 		gbc_tglbtnCircle.gridy = 5;
-		tglbtnCircle.setIcon(new ImageIcon("C:\\Users\\igor\\Downloads\\go4code-master-6818eda9944da56fc0fc5744f5e409be6bf87ac4\\01\\start\\DaniloRis\\bin\\shapeImages\\Circle.png"));
+		URL url4 = ClassLoader.getSystemClassLoader().getResource("shapeImages/Circle.png");
+		tglbtnCircle.setIcon(new ImageIcon(url4));
 		tglbtnCircle.setBackground(Color.WHITE);
 		pnlWest.add(tglbtnCircle, gbc_tglbtnCircle);
 
@@ -304,7 +310,8 @@ public class DrawingFrame extends JFrame {
 		gbc_tglbtnHexagon.fill = GridBagConstraints.HORIZONTAL;
 		gbc_tglbtnHexagon.gridx = 0;
 		gbc_tglbtnHexagon.gridy = 6;
-		tglbtnHexagon.setIcon(new ImageIcon("C:\\Users\\igor\\Downloads\\go4code-master-6818eda9944da56fc0fc5744f5e409be6bf87ac4\\01\\start\\DaniloRis\\bin\\shapeImages\\Hex.png"));
+		URL url5 = ClassLoader.getSystemClassLoader().getResource("shapeImages/Hex.png");
+		tglbtnHexagon.setIcon(new ImageIcon(url5));
 		tglbtnHexagon.setBackground(Color.WHITE);
 		pnlWest.add(tglbtnHexagon, gbc_tglbtnHexagon);
 
